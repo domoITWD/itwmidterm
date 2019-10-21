@@ -1,0 +1,902 @@
+/* Page one */
+
+body {
+  margin: 0;
+}
+
+.coverimg {
+  background-image: url('https://i.pinimg.com/564x/9e/f8/46/9ef8465007dbe4661a8a48ed0cd14f43.jpg');
+  /* first background image of home page */
+}
+
+ a {
+   color: #000;
+   text-decoration: none;
+ }
+
+.gridContainer {
+  margin: 1vmin 3vmin 1vmin 3vmin;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 2vmin;
+  grid-row-gap: 1vmin;
+  /* grid container for first half of home page */
+}
+
+.title {
+  grid-column-end: span 8;
+  text-align: center;
+}
+
+.titleStyle {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 15vmin;
+  word-spacing: 2vmin;
+  border-bottom: solid #A4BABF;
+  border-width: 2vmin;
+  line-height: 1.5;
+  color: #000;
+}
+
+.halfImageSplash {
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  grid-column-end: span 4;
+  background-color: #fff;
+  /* sizing for dual images */
+}
+
+.heroOne {
+  background-image: url('https://i.pinimg.com/564x/b7/70/6c/b7706ca3952e24956250bfbf223685dd.jpg');
+  /* airy hero image */
+}
+
+.heroOne:hover {
+  filter: grayscale(100%);
+}
+
+.heroTwo {
+  filter: none;
+  background-image: url('https://pbs.twimg.com/media/EHHJwdeWkAExA9s?format=jpg&name=4096x4096');
+  /* heavy hero image */
+}
+
+.heroTwo:hover {
+  filter: grayscale(150%);
+}
+
+.shop {
+  font-size: 11vmin;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  word-spacing: 2vmin;
+  /* text in hero images */
+}
+
+.Linkpg1:hover {
+  color: #fff;
+  font-size: 11vmin;
+}
+
+.airy {
+  background-color: #7297A6;
+  color: blue;
+  font-family: 'Big Shoulders Text', cursive;
+  text-transform: uppercase;
+  /* styling for shop airy text */
+}
+
+.heavy {
+  font-family: 'Black Ops One', cursive;
+  background-color: #202126;
+  text-transform: uppercase;
+  font-weight: bolder;
+  /* styling for shop heavy text */
+}
+
+ .subscriber{
+   font-family: 'Big Shoulders Text', cursive;
+   display: grid;
+   grid-column-end: span 8;
+   text-align: right;
+   font-size: 7vmin;
+   color: #7297A6;
+   padding-top: 2vmin;
+   font-weight: lighter;
+   /* lookbook styling + placement */
+ }
+
+ .coverimg2 {
+   background-image: url('https://i.pinimg.com/564x/5e/d1/97/5ed197100e2189289bfbc099160ba463.jpg');
+   /* second half of page cover image */
+ }
+
+ .gridContainer2 {
+   margin: 1vmin 3vmin 1vmin 3vmin;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-column-gap: 2vmin;
+   grid-row-gap: 1vmin;
+   /* second grid container for home page */
+ }
+
+.Zipper{
+  display: grid;
+  grid-column-gap: 2vmin;
+  height: 75vmin;
+  width: 50vmin;
+  border-style: solid;
+  border-color: #fff;
+  overflow: hidden;
+  grid-column-end: span 4;
+  /* placement class for lookbook photos */
+}
+
+/* lookbook photos below */
+ .image1 {
+   background-position: center;
+   background-size: cover;
+   background-image: url('https://i.pinimg.com/564x/3d/f7/24/3df724638fe11891751fc8436c748346.jpg');
+   opacity: 0.8;
+ }
+
+ .image2 {
+   background-position: center;
+   background-size: cover;
+   background-image: url('https://i.pinimg.com/564x/2f/93/fc/2f93fceaa90f6b93484399f07e85f09e.jpg');
+   opacity: 0.8;
+
+ }
+
+ .image3 {
+   background-position: center;
+   background-size: cover;
+   background-image: url('https://i.pinimg.com/564x/e9/5f/77/e95f7788011d0bb905aa0fe106ee3b36.jpg');
+   opacity: 0.9;
+ }
+
+ .image4 {
+   background-position: center;
+   background-size: cover;
+   background-image: url('https://i.pinimg.com/236x/ad/82/8e/ad828e85b7660c7db4a51abf2850651c.jpg');
+   opacity: 0.9;
+ }
+
+ .image5 {
+   background-position: center;
+   background-size: cover;
+   background-image: url('https://i.pinimg.com/236x/0a/da/32/0ada32de8bd71545571f8fc4c8a4c145.jpg');
+   opacity: 0.9;
+ }
+
+ .image6 {
+   background-position: center;
+   background-size: cover;
+   background-image: url('https://i.pinimg.com/236x/5c/3d/91/5c3d91a6d62c685537dd967df9757763.jpg');
+   opacity: 0.9;
+ }
+
+ .image7 {
+   background-position: center;
+   background-size: cover;
+   background-image: url('https://i.pinimg.com/236x/8b/fd/7a/8bfd7abd78a0c00825002446e721f617.jpg');
+   opacity: 0.9;
+ }
+
+ .image8 {
+   background-position: center;
+   background-size: cover;
+   background-image: url('https://i.pinimg.com/236x/46/7f/5b/467f5b303deb062a890ab9c682c61205.jpg');
+   opacity: 0.9;
+ }
+
+/* footer placement + styling */
+ .footerSize {
+   display: grid;
+   grid-column-end: span 8;
+   height: 15vh;
+ }
+
+ .FooterStyle{
+   background-color: #F2F2F2;
+   background-position: center;
+   text-align: center;
+   font-size: 2vmin;
+   font-family: 'Black Ops One', cursive;
+   opacity: 0.4;
+ }
+
+
+/* Page two */
+
+.gridContainerpg2 {
+  margin: 1vmin 3vmin 1vmin 3vmin;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+/* third grid container in total*/
+
+.title2 {
+  grid-column-end: span 8;
+  height: 50vmin;
+  text-align: center;
+  margin-top: 4vmin;
+  margin-bottom: 0;
+}
+
+.titleStyle2 {
+  background-image: url('https://media.buzzle.com/media/images-en/photos/conceptual/fabric/1200-3048701-white-silk.jpg');
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 20vmin;
+  line-height: 1.5vmin;
+  color: #BFBFBF;
+  /* airy title */
+}
+
+.titleStyle2:hover {
+  color: #7297A6;
+}
+
+/* menu */
+.Nav {
+  display: grid;
+  grid-column-end: span 8;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  font-size: 5vmin;
+}
+
+/* creating line through current page that s open for user ease */
+.Linkpg2 {
+  letter-spacing: 1vmin;
+  font-family: 'Big Shoulders Text', cursive;
+  color: #7297A6;
+}
+
+.Linkpg22 {
+  letter-spacing: 1vmin;
+  font-family: 'Big Shoulders Text', cursive;
+  color: #7297A6;
+  text-decoration: line-through;
+}
+
+.Linkpg2:hover{
+  color: #C0C0C0;
+}
+
+/*visual content for page 2 starts here*/
+.Airy {
+  display: grid;
+  grid-column-end: span 4;
+  height: 50vmin;
+  width: 35vmin;
+  border-style: solid;
+  border-color: #fff;
+  overflow: hidden;
+  /*photo placement */
+}
+
+/* photos for clothing */
+.Image1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/d1/7d/cd/d17dcdb960aa6f56e2e8ec0b99541372.jpg');
+  filter: grayscale(100%);
+}
+
+/* product description + price */
+.Blerb1 {
+  display: grid;
+  grid-column-start: 1;
+}
+
+.blerb1 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+
+.Image1:hover {
+  filter: none;
+}
+
+.Image2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/81/b0/da/81b0da45ba1e5560a927a4efc16997cb.jpg');
+  grid-column-start: 4;
+  filter: grayscale(100%);
+}
+
+.Blerb2 {
+  display: grid;
+  grid-column-start: 4;
+}
+
+.blerb2 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+
+.Image2:hover {
+  filter: none;
+}
+
+.Image3 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/564x/61/f9/c7/61f9c766def128e4b606208189a665ff.jpg');
+  grid-column-start: 7;
+  filter: grayscale(100%);
+}
+
+.Blerb3 {
+  display: grid;
+  grid-column-start: 7;
+}
+
+.blerb3 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+
+.Image3:hover {
+  filter: none;
+}
+
+.Image4 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/7c/69/01/7c69011b6431d7d76961ccb7f89e5a77.jpg');
+  filter: grayscale(100%);
+}
+
+.Blerb4 {
+  display: grid;
+  grid-column-start: 1;
+}
+
+.blerb4 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+
+.Image4:hover {
+  filter: none;
+}
+
+.Image5 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/c4/d0/2f/c4d02f4e28174426de7e0d0e18d8a5d7.jpg');
+  grid-column-start: 4;
+  filter: grayscale(100%);
+}
+
+.Blerb5 {
+  display: grid;
+  grid-column-start: 4;
+}
+
+.blerb5 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+
+.Image5:hover {
+  filter: none;
+}
+
+.Image6 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/ef/09/58/ef0958a0561b6cce858cd76c04c9f7da.jpg');
+  grid-column-start: 7;
+  filter: grayscale(100%);
+}
+
+.Blerb6 {
+  display: grid;
+  grid-column-start: 7;
+}
+
+.blerb6 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+
+.Image6:hover {
+  filter: none;
+}
+
+.Image7 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/9b/8a/85/9b8a8562a1c3574899e2eec23bcadbb0.jpg');
+  filter: grayscale(100%);
+}
+
+.Blerb7 {
+  display: grid;
+  grid-column-start: 1;
+}
+
+.blerb7 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+
+.Image7:hover {
+  filter: none;
+}
+
+.Image8 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/0a/fd/ee/0afdee6aad67e153eb0742b1674a75e3.jpg');
+  grid-column-start: 4;
+  filter: grayscale(100%);
+}
+
+.Blerb8 {
+  display: grid;
+  grid-column-start: 4;
+}
+
+.blerb8 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+
+.Image8:hover {
+  filter: none;
+}
+
+.Image9 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/dc/b6/08/dcb6084652bf8b8f85ec6eca7ac28263.jpg');
+  grid-column-start: 7;
+  filter: grayscale(100%);
+}
+
+.Blerb9 {
+  display: grid;
+  grid-column-start: 7;
+}
+
+.blerb9 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+}
+
+.Image9:hover {
+  filter: none;
+}
+/* END of airy photo, product name and proce */
+
+/* hero text begins here */
+.Her0 {
+  display: grid;
+  padding-top: 15vmin;
+}
+
+.everything {
+  padding-top: 15vmin;
+  grid-column-end: span 2;
+  margin: 0;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 15vmin;
+  color: #7297A6;
+}
+
+.weird {
+  padding-top: 15vmin;
+  margin: 0;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 15vmin;
+  color: #7297A6;
+  grid-column-end: span 1;
+}
+
+.everything2 {
+  margin: 0;
+  padding-bottom: 15vmin;
+  grid-column-end: span 2;
+  margin: 0;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 15vmin;
+  color: #7297A6;
+}
+
+.free {
+  padding-top: 15vmin;
+  margin: 0;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 15vmin;
+  color: #7297A6;
+  grid-column-end: span 1;
+}
+
+.everything3 {
+  margin: 0;
+  padding-bottom: 15vmin;
+  grid-column-end: span 2;
+  margin: 0;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 15vmin;
+  color: #7297A6;
+}
+
+.human {
+  padding-top: 15vmin;
+  margin: 0;
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 15vmin;
+  color: #7297A6;
+  grid-column-end: span 1;
+}
+
+/* Page 3 */
+/* exact layout of page 2 with styling adjustments */
+
+.gridContainerpg3 {
+  background-color: #000;
+  margin: 1vmin 3vmin 1vmin 3vmin;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+/* fourth grid container in total */
+
+/* heavy title */
+.title3 {
+  text-transform: uppercase;
+  grid-column-end: span 8;
+  height: 50vmin;
+  text-align: center;
+  margin-top: 4vmin;
+  margin-bottom: 0;
+}
+
+.titleStyle3 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 20vmin;
+  line-height: 45vmin;
+  color: #ff0000;
+}
+
+.titleStyle3:hover {
+  color: #fff;
+}
+
+/* page 3 menu */
+.Nav3 {
+  display: grid;
+  grid-column-end: span 8;
+}
+
+.Navbar3 {
+  display: flex;
+  justify-content: center;
+  font-size: 4vmin;
+}
+
+.Linkpg3 {
+  letter-spacing: 1vmin;
+  font-family: 'Black Ops One', cursive;
+  color: #ff0000;
+}
+
+.Linkpg33 {
+  letter-spacing: 1vmin;
+  font-family: 'Black Ops One', cursive;
+  color: #ff0000;
+  text-decoration: line-through;
+}
+
+.Linkpg3:hover{
+  color: #fff;
+}
+
+/* page 3 content starts here */
+
+.Heavy {
+  display: grid;
+  grid-column-end: span 4;
+  height: 50vmin;
+  width: 35vmin;
+  border-style: solid;
+  border-color: #fff;
+  overflow: hidden;
+}
+
+.IMage1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/d7/2b/57/d72b5708db6c62b2e1d6c852dea113ba.jpg');
+  filter: grayscale(100%);
+}
+
+/* clothing description + price */
+.Blerb13 {
+  display: grid;
+  grid-column-start: 1;
+}
+
+.blerb13 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+  color: #fff;
+}
+
+.IMage1:hover {
+  filter: sepia(45%);
+}
+
+.IMage2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/34/c0/fb/34c0fb65c36fc31b977be5c943f73e00.jpg');
+  grid-column-start: 4;
+  filter: grayscale(100%);
+}
+
+.Blerb23 {
+  display: grid;
+  grid-column-start: 4;
+}
+
+.blerb23 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+  color: #fff;
+}
+
+.IMage2:hover {
+  filter: sepia(25%);
+}
+
+.IMage3 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/f9/64/1a/f9641a7fa6eb8b32677a2ec95320ee9f.jpg');
+  grid-column-start: 7;
+  filter: grayscale(100%);
+}
+
+.Blerb33 {
+  display: grid;
+  grid-column-start: 7;
+}
+
+.blerb33 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+  color: #fff;
+}
+
+.IMage3:hover {
+  filter: sepia(45%);
+}
+
+.IMage4 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/6f/7c/56/6f7c56a6d6366ce2ef06e8f9727693eb.jpg');
+  filter: grayscale(100%);
+}
+
+.Blerb43 {
+  display: grid;
+  grid-column-start: 1;
+}
+
+.blerb43 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+  color: #fff;
+}
+
+.IMage4:hover {
+  filter: sepia(10%);
+}
+
+.IMage5 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/2d/29/ae/2d29aecade82bd86de4e917884ec17e2.jpg');
+  grid-column-start: 4;
+  filter: grayscale(100%);
+}
+
+.Blerb53 {
+  display: grid;
+  grid-column-start: 4;
+}
+
+.blerb53 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+  color: #fff;
+}
+
+.IMage5:hover {
+  filter: sepia(45%);
+}
+
+.IMage6 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/28/69/9c/28699c5ba507750e94d0f78b1474ee33.jpg');
+  grid-column-start: 7;
+  filter: grayscale(100%);
+}
+
+.Blerb63 {
+  display: grid;
+  grid-column-start: 7;
+}
+
+.blerb63 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+  color: #fff;
+}
+
+.IMage6:hover {
+  filter: sepia(45%);
+}
+
+.IMage7 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/236x/44/0d/40/440d4006b6ad67d4ed60fc22d2be97f4.jpg');
+  filter: grayscale(100%);
+}
+
+.Blerb73 {
+  display: grid;
+  grid-column-start: 1;
+}
+
+.blerb73 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+  color: #fff;
+}
+
+.IMage7:hover {
+  filter: sepia(45%);
+}
+
+.IMage8 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/564x/dc/80/62/dc806205942975cb1cd21e0854defb64.jpg');
+  grid-column-start: 4;
+  filter: grayscale(100%);
+}
+
+.Blerb83 {
+  display: grid;
+  grid-column-start: 4;
+}
+
+.blerb83 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+  color: #fff;
+}
+
+.IMage8:hover {
+  filter: sepia(45%);
+}
+
+.IMage9 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://i.pinimg.com/564x/cc/a6/70/cca670cb0ef1d4b96f74200b406af67b.jpg');
+  grid-column-start: 7;
+  filter: grayscale(100%);
+}
+
+.Blerb93 {
+  display: grid;
+  grid-column-start: 7;
+}
+
+.blerb93 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 5vmin;
+  line-height: 6vmin;
+  color: #fff;
+}
+
+.IMage9:hover {
+  filter: sepia(50%);
+}
+/* END of page 3 clothing description + pricing*/
+/* hero text begins here (pg3)*/
+.Her03 {
+  display: grid;
+  padding-top: 15vmin;
+}
+
+.everything33 {
+  padding-top: 15vmin;
+  grid-column-end: span 2;
+  margin: 0;
+  font-family: 'Black Ops One', cursive;
+  font-size: 13vmin;
+  color: #ff0000;
+}
+
+.weird3 {
+  padding-top: 15vmin;
+  margin: 0;
+  font-family: 'Black Ops One', cursive;
+  font-size: 13vmin;
+  color: #ff0000;
+  grid-column-end: span 1;
+}
+
+.everything4 {
+  margin: 0;
+  padding-bottom: 15vmin;
+  grid-column-end: span 2;
+  margin: 0;
+  font-family: 'Black Ops One', cursive;
+  font-size: 13vmin;
+  color: #ff0000;
+}
+
+.free3 {
+  padding-top: 15vmin;
+  margin: 0;
+  font-family: 'Black Ops One', cursive;
+  font-size: 13vmin;
+  color: #ff0000;
+  grid-column-end: span 1;
+}
+
+.everything5 {
+  margin: 0;
+  padding-bottom: 15vmin;
+  grid-column-end: span 2;
+  margin: 0;
+  font-family: 'Black Ops One', cursive;
+  font-size: 13vmin;
+  color: #ff0000;
+}
+
+.human3 {
+  padding-top: 15vmin;
+  margin: 0;
+  font-family: 'Black Ops One', cursive;
+  font-size: 13vmin;
+  color: #ff0000;
+  grid-column-end: span 1;
+}
+
+/* yay! */
