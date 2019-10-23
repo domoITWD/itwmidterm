@@ -630,10 +630,13 @@ body {
   text-decoration: line-through;
 }
 
-.Linkpg3:hover{
+.Linkpg3:hover {
   color: #fff;
 }
 
+.Linkpg33:hover {
+  color: #fff;
+}
 /* page 3 content starts here */
 
 .Heavy {
