@@ -125,6 +125,7 @@ body {
 .Zipper{
   display: grid;
   grid-column-gap: 2vmin;
+  /* grid-row-gap: 2vmin; */
   height: 75vmin;
   width: 50vmin;
   border-style: solid;
@@ -232,6 +233,9 @@ body {
   font-size: 20vmin;
   line-height: 1.5vmin;
   color: #BFBFBF;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   /* airy title */
 }
 
@@ -500,7 +504,7 @@ body {
   margin: 0;
   font-family: 'Big Shoulders Text', cursive;
   font-size: 15vmin;
-  color: #7297A6;
+  color: #BFBFBF;
 }
 
 .weird {
@@ -508,7 +512,7 @@ body {
   margin: 0;
   font-family: 'Big Shoulders Text', cursive;
   font-size: 15vmin;
-  color: #7297A6;
+  color: #BFBFBF;
   grid-column-end: span 1;
 }
 
@@ -519,7 +523,7 @@ body {
   margin: 0;
   font-family: 'Big Shoulders Text', cursive;
   font-size: 15vmin;
-  color: #7297A6;
+  color: #BFBFBF;
 }
 
 .free {
@@ -527,7 +531,7 @@ body {
   margin: 0;
   font-family: 'Big Shoulders Text', cursive;
   font-size: 15vmin;
-  color: #7297A6;
+  color: #BFBFBF;
   grid-column-end: span 1;
 }
 
@@ -538,7 +542,7 @@ body {
   margin: 0;
   font-family: 'Big Shoulders Text', cursive;
   font-size: 15vmin;
-  color: #7297A6;
+  color: #BFBFBF;
 }
 
 .human {
@@ -546,36 +550,49 @@ body {
   margin: 0;
   font-family: 'Big Shoulders Text', cursive;
   font-size: 15vmin;
-  color: #7297A6;
+  color: #BFBFBF;
   grid-column-end: span 1;
+}
+
+.Her0:hover {
+  color: #7297A6;
 }
 
 /* Page 3 */
 /* exact layout of page 2 with styling adjustments */
 
+.page3 {
+  margin:0;
+}
+
 .gridContainerpg3 {
+  grid-column-end: span 8;
   background-color: #000;
   margin: 1vmin 3vmin 1vmin 3vmin;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  overflow: hidden;
+
 }
 /* fourth grid container in total */
 
 /* heavy title */
 .title3 {
+  display: grid;
   text-transform: uppercase;
   grid-column-end: span 8;
   height: 50vmin;
   text-align: center;
-  margin-top: 4vmin;
   margin-bottom: 0;
 }
 
 .titleStyle3 {
+  background-color: #ff0000;
   font-family: 'Black Ops One', cursive;
   font-size: 20vmin;
-  line-height: 45vmin;
+
   color: #ff0000;
+  line-height: 1.5vmin;
 }
 
 .titleStyle3:hover {
@@ -601,6 +618,12 @@ body {
 }
 
 .Linkpg33 {
+  letter-spacing: 1vmin;
+  font-family: 'Black Ops One', cursive;
+  color: #ff0000;
+}
+
+.Linkpg333 {
   letter-spacing: 1vmin;
   font-family: 'Black Ops One', cursive;
   color: #ff0000;
@@ -861,6 +884,9 @@ body {
   grid-column-end: span 1;
 }
 
+.Her03:hover {
+  color: #fff;
+}
 .everything4 {
   margin: 0;
   padding-bottom: 15vmin;
